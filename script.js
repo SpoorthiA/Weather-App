@@ -83,16 +83,16 @@ function getWeatherIcon(weather) {
 
 function setBackground(weather) {
     const backgrounds = {
-        Clouds: 'url(../images/clouds.webp)',
-        Rain: 'url(../images/rain.avif)',
-        Clear: 'url(../images/clear.jpg)',
-        Snow: 'url(../images/snow.avif)',
-        Thunderstorm: 'url(../images/thunder.jpg)',
-        Drizzle: 'url(../images/drizzle.jpeg)',
-        Mist: 'url(../images/mist.jpg)',
-        Haze: 'url(../images/mist.jpg)',
-        Fog: 'url(../images/mist.jpg)',
-        Smoke: 'url(../images/mist.jpg)'
+        Clouds: 'url(../clouds.webp)',
+        Rain: 'url(../rain.avif)',
+        Clear: 'url(../clear.jpg)',
+        Snow: 'url(../snow.avif)',
+        Thunderstorm: 'url(../thunder.jpg)',
+        Drizzle: 'url(../drizzle.jpeg)',
+        Mist: 'url(../mist.jpg)',
+        Haze: 'url(../mist.jpg)',
+        Fog: 'url(../mist.jpg)',
+        Smoke: 'url(../mist.jpg)'
     };
 
     document.body.style.backgroundImage = backgrounds[weather] || 'url(../images/bg.jpg)';

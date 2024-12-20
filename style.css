@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(../images/bg.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-main {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.header h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #debff4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c09ae2;
+}
+
+.weather-body {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.location-details {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.weather-status .temp {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.weather-status .weather {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.weather-status .min-max {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .app-main {
+    width: 95%;
+  }
+}
